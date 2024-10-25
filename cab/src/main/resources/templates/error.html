@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Success</title>
+</head>
+<body>
+    <h1>Booking Success</h1>
+    <h2>Booking Details</h2>
+    <p>Name: <span id="name"></span></p>
+    <p>Pickup Location: <span id="pickupLocation"></span></p>
+    <p>Destination: <span id="destination"></span></p>
+
+    <script>
+        // Fetch booking details from local storage and display
+        document.getElementById('name').innerText = localStorage.getItem('name');
+        document.getElementById('pickupLocation').innerText = localStorage.getItem('pickupLocation');
+        document.getElementById('destination').innerText = localStorage.getItem('destination');
+    </script>
+</body>
+</html>
